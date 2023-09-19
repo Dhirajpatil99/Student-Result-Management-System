@@ -3,7 +3,7 @@ from login import login as l
 
 from streamlit_option_menu import option_menu
 st.set_page_config(page_title="Result Management System")
-l=l("localhost","root","root","management_system")
+l=l("xxxx","xxxx","xxx","xxxxxxx")
 st.title("Result Management System")
 with st.sidebar:
     choice=option_menu("ROLES",("ADMIN","TEACHER","STUDENT"))
