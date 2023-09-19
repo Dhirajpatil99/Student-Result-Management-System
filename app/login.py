@@ -17,7 +17,7 @@ class login(functions,triggers):
 
     def admin_login(self):
         pswd=st.text_input("Enter Password",type="password")
-        if pswd=="admin@123":
+        if pswd=="xxxxxx":
             st.title("Admin Page")
             with st.sidebar:
                 option=option_menu(None,["Course","Teacher","Student"],icons=["person","book"],menu_icon="cast",orientation="horizontal")
@@ -122,56 +122,6 @@ class login(functions,triggers):
                     self._view_result(course_id,module_id)
 
 
-
-                    
-    #             if tmenu=="Add Teacher":
-    #                 tname=st.text_input("Name of Teacher")
-    #                 pswd=st.text_input("Password for that Teacher ",type ='password')
-    #                 if tname!="" and pswd!="":
-    #                     if add_teacher(tname,pswd):
-    #                         st.success("Added Teacher")
-    #                     else:
-    #                         st.error("Failed to Add Teacher")
-                    
-    #             if tmenu=="Delete Teacher":
-    #                 tname=st.text_input("Name of Teacher")
-    #                 if tname!="":
-    #                     if remove_teacher(tname):
-    #                         st.success("Teacher Removed")
-    #                     else:
-    #                         st.error("Teacher Not Found")
-                    
-    #         else:
-    #             smenu=option_menu(None,["View Results","Add Result","Update Results","View Student","Add Student","Delete Student"],icons=["","",""],menu_icon="cast",orientation="horizontal")
-    #             if smenu=="View Results":
-    #                 view_results()
-    #             if smenu=="Add Result":
-    #                     Id = st.text_input("Enter ID")
-    #                     Student_name = st.text_input(f"Enter ID:{Id} Name ")
-    #                     Lab = st.text_input(f"Enter {Student_name} Lab Marks ")
-    #                     McQ = st.text_input(f"Enter {Student_name} McQ MArks ")
-    #                     Module = st.text_input(f"Enter Module")
-    #                     Instructor = st.text_input(f"Enter module {Module} Instructor ")
-    #                     if Id!="" and Student_name!="" and Lab!="" and McQ!="" and Instructor!="":
-    #                         if add_result(Id,Student_name,Lab,McQ,Module,Instructor):
-    #                             st.success("Student Added ")
-    #                         else:
-    #                             st.error("Error Occured ")
-    #             if smenu=="View Student":
-    #                 view_student()
-    #             if smenu=="Update Results":
-    #                 update_result()
-    #             if smenu=="Add Student":
-    #                 roll_no=st.text_input("Enter Your roll number")
-    #                 dob=st.text_input("Enter Your Date Of Birth ",placeholder="yyyy-mm-dd")
-    #                 if dob!="" :
-    #                     if add_student(roll_no,dob):
-    #                         st.success("Student added")
-    #                     else:
-    #                         st.error("Error Found")
-    #             if smenu=="Delete Student":
-    #                 delete_student_results()
-    #         st.session_state.role=None
 
     def teacher_login(self):
         teacher_id=st.text_input("Enter User name")
